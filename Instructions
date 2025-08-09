@@ -1,223 +1,68 @@
-ahsan@mr-dell: ~/git/cyb-theme
-ahsan@mr-dell:-/git$ git clone https://github.com/zartashbaig/cyb-theme.git
-Cloning into 'cyb-theme'
-Username for 'https://github.com': github_pat_11A3CZUEI0aYzy0u0CyHqK_l2lmWKuX33Y wjsnkhqjPG4cAoirUL1gnK3P1a8Lj3awCJW6026VTTMaWhnj
-Password for 'https://github_pat_11A3CZUEI0aYzy0u0CyHqK_l2lmWKuX33YwjsnkhqjPG4cA oirUL1gnK3P1a8Lj3awCJW6026VTTMaWhnj@github.com':
-remote: Write access to repository not granted.
-fatal: unable to access 'https://github.com/zartashbaig/cyb-theme.git/': The req uested URL returned error: 403
-ahsan@mr-dell:-/git$ git clone https://github.com/zartashbaig/cyb-theme.git
-Cloning into 'cyb-theme'...
-Username for 'https://github.com': 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
-Password for 'https://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@github.com':
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
-Receiving objects: 100% (3/3), done.
-ahsan@mr-dell:-/git$ ls
-cyb-theme
-ahsan@mr-dell:-/git$ cd cyb-theme/
-ahsan@mr-dell:-/git/cyb-theme$ ls
-README.md
-ahsan@mr-dell:~/git/cyb-theme$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-Changes not staged for commit:
-(use "git add <file>..." to update what will be committed)
-(use "git restore <file>..." to discard changes in working directory)
-modified: README.md
-Untracked files:
-(use "git add <file>..." to include in what will be committed)
-cyb_web_snippets/
-no changes added to commit (use "git add" and/or "git commit -a")
-ahsan@mr-dell:-/git/cyb-theme$ git add.
-ahsan@mr-dell:-/git/cyb-theme$ git config user.name "ahsantalal426"
-ahsan@mr-dell:-/git/cyb-theme$ git config user.email "ahsantalal426@gmail.com"
-ahsan@mr-dell:~/git/cyb-theme$ git commit -m "frst commit"
-[main 5b0e920] frst commit
-19 files changed, 1851 insertions(+)
-create mode 100644 cyb_web_snippets/_init__.py
-
-Untracked files:
-cyb_web_snippets/
-(use "git add <file>..." to include in what will be committed)
-no changes added to commit (use "git add" and/or "git commit -a")
-ahsan@mr-dell:~/git/cyb-theme$ git add.
-ahsan@mr-dell:-/git/cyb-theme$ git config user.name "ahsantalal426"
-ahsan@mr-dell:-/git/cyb-theme$ git config user.email "ahsantalal426@gmail.com"
-ahsan@mr-dell:-/git/cyb-theme$ git commit -m "frst commit"
-[main 5b0e920] frst commit
-19 files changed, 1851 insertions(+)
-create mode 100644 cyb_web_snippets/_init__.py
-create mode 100644 cyb_web_snippets/_manifest__.py
-create mode 100644 cyb_web_snippets/_pycache/_init_.cpython-312.pyc
-create mode 100644 cyb_web_snippets/static/description/banner.jpeg
-create mode 100644 cyb_web_snippets/static/description/icon.png
-create mode 100644 cyb_web_snippets/static/description/index.html
-create mode 100644 cyb_web_snippets/static/src/css/pro_cards_slider.css
-create mode 100644 cyb_web_snippets/static/src/css/s_alpine_slider.css
-create mode 100644 cyb_web_snippets/static/src/css/s_butterflies_cards.css
-create mode 100644 cyb_web_snippets/static/src/css/s_latest_cards.css
-create mode 100644 cyb_web_snippets/static/src/css/s_open_cards.css
-create mode 100644 cyb_web_snippets/static/src/js/pro_cards_slider.js
-create mode 100644 cyb_web_snippets/views/snippets/pro_cards_slider.xml
-create mode 100644 cyb_web_snippets/views/snippets/s_alpine_slider.xml
-create mode 100644 cyb_web_snippets/views/snippets/s_butterflies_cards.xml
-create mode 100644 cyb_web_snippets/views/snippets/s_latest_cards.xml
-create mode 100644 cyb_web_snippets/views/snippets/s_open_cards.xml
-create mode 100644 cyb_web_snippets/views/snippets/snippets.xml
-ahsan@mr-dell:-/git/cyb-theme$ git push origin main
-Username for 'https://github.com': cyb_web_snippets
-Password for 'https://cyb_web_snippets@github.com':
-Enumerating objects: 32, done.
-Counting objects: 100% (32/32), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (26/26), done.
-Writing objects: 100% (30/30), 234.91 KiB | 2.40 MiB/s, done.
-Total 30 (delta 3), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (3/3), done.
-To https://github.com/zartashbaig/cyb-theme.git
-b9dae61..5b0e920 main -> main
-ahsan@mr-dell:~/git/cyb-themes
-
-
-4 Aug 2025
 Git Commands for Pull & Push
-1️⃣ Clone Repository (First Time Only)
-bash
-Copy
-Edit
-git clone <repository-url>
-Example:
 
-bash
-Copy
-Edit
+1️⃣ Clone Repository (First Time Only)
 git clone https://github.com/username/repo-name.git
+
 2️⃣ Check Repository Status
-bash
-Copy
-Edit
 git status
-Shows modified, added, or deleted files.
 
 3️⃣ Pull Latest Changes from GitHub
-bash
-Copy
-Edit
 git pull origin main
-origin → remote name
-
-main → branch name (master in older repos)
 
 4️⃣ Add Changes to Staging
-Add all files:
-
-bash
-Copy
-Edit
 git add .
-Add specific file:
-
-bash
-Copy
-Edit
 git add filename.ext
+
 5️⃣ Commit Changes
-bash
-Copy
-Edit
 git commit -m "Your commit message"
+
 6️⃣ Push Changes to GitHub
-bash
-Copy
-Edit
 git push origin main
+
 7️⃣ Branch Management
 Show all branches:
-
-bash
-Copy
-Edit
 git branch
-Create new branch:
 
-bash
-Copy
-Edit
+Create new branch:
 git branch branch-name
 Switch branch:
-
-bash
-Copy
-Edit
 git checkout branch-name
+
 Create & switch in one step:
-
-bash
-Copy
-Edit
 git checkout -b branch-name
-Push a new branch to GitHub:
 
-bash
-Copy
-Edit
+Push a new branch to GitHub:
 git push -u origin branch-name
+
 8️⃣ View Commit History
-bash
-Copy
-Edit
 git log --oneline
+
 9️⃣ Undo Changes
 Undo changes in a file (restore from last commit):
-
-bash
-Copy
-Edit
 git checkout -- filename.ext
+
 Unstage a file:
-
-bash
-Copy
-Edit
 git reset filename.ext
+
 Undo last commit but keep changes:
-
-bash
-Copy
-Edit
 git reset --soft HEAD~1
-Undo last commit and remove changes:
 
-bash
-Copy
-Edit
+Undo last commit and remove changes:
 git reset --hard HEAD~1
+
 🔟 Remote Repository Management
 Show remotes:
-
-bash
-Copy
-Edit
 git remote -v
+
 Add remote:
-
-bash
-Copy
-Edit
 git remote add origin <repository-url>
+
 Change remote URL:
-
-bash
-Copy
-Edit
 git remote set-url origin <repository-url>
-✅ Typical Daily Workflow
 
-bash
-Copy
-Edit
+✅ Typical Daily Workflow
 git pull origin main
+git status
 git add .
 git commit -m "Description of changes"
 git push origin main
