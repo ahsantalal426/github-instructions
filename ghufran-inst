@@ -1,0 +1,47 @@
+    • Sudo apt-get install git
+    • git config --global user.name "Ghufran Ahmad"
+    • git config --global user.email "ghufran.cybat@gmail.com"
+    • git config –list
+    • git init
+    • ls -la
+    • git status
+    • git add */index.html (use asterik to add all files or give the file name)
+    • git commit -m “First version of index.html”
+    • git log
+    • git branch
+    • git status
+    • git diff
+      
+    • git show e40cce74e2c509e48b863a75a5bbd97ff1c8ad7f:index.html 
+(git show commit id:file path in local repo) 
+(It show the code in the commit with given commit id)
+      
+    • git checkout 65be6a700b9f877ae46273ddae1111f91f907fb4 -- */index.html
+(use asterik to add all files or give the file name)
+(It will bring back the code which was committed within this commit id)
+
+    • git checkout master -- *
+       
+Negative case scenario commands: 
+	In case some wrong changes are saved in the file or added to the git.
+
+    • git restore ./file name (dot/file name) (restore to last working version of file)
+    • git diff –cached (It will show the difference in the file after “git add” )
+    • git restore --staged . (It will revert the code like before “git add” command)
+    • git restore --worktree */index.html (if we “git add” the file, after this there’s some mistake in the error and this command will undo changes to the file after adding it to the git)
+    • git reset --soft HEAD^ (Uncommit and keep the changes)
+    • git reset --hard HEAD^ (Uncommit and but discard the changes)
+
+
+Useful Log Options
+    • git log -p -2 (last two commit with diff)
+    • git log --stat (summary of changes)
+    • git log --pretty=oneline
+    • git log --pretty=format:"%h - %an, %ar : %s"
+    • git log -S function_name
+    • git log --grep="fix bug" (search commit msg)
+    • git log --since="2024-01-01"
+    • git log --until="2024-01-01"
+    • git log --author="Ghufran"
+    • git log --no-merges
+    • 
